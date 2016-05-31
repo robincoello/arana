@@ -1,9 +1,17 @@
-"arana
+#arana
 
-go to /arana/tutorial/tutorial/spiders
-them 
-scrapy crawl dmoz
+go to 
 
-to check see the file 
+/arana/tutorial/tutorial/spiders
 
-/arana2/tutorial/tutorial/spiders/respuestas.html
+them in the terminal write
+
+scrapy crawl dmoz 
+
+enter
+
+to check the resultat
+
+/arana/tutorial/tutorial/spiders/respuestas.html
+
+
