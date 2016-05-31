@@ -1,5 +1,9 @@
-# araña
-get a rss url from a web site 
+"arana
 
-* mkdir anara
-* 
+go to /arana/tutorial/tutorial/spiders
+them 
+scrapy crawl dmoz
+
+to check see the file 
+
+/arana2/tutorial/tutorial/spiders/respuestas.html
