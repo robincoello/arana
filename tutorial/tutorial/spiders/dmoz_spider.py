@@ -43,17 +43,17 @@ with open('subject_website.csv', 'rb') as f:
             doc, tag, text = Doc().tagtext()
             with tag('root'):
                 with tag('doc'):
-                    with tag('id', name='web'):
+                    with tag('id', name='is'):
                         text(w_id)
-                    with tag('name', name='rss'):
+                    with tag('name', name='name'):
                         text(w_name)
-                    with tag('info1', name='rss'):
+                    with tag('info1', name='info1'):
                         text(w_info1)
-                    with tag('info2', name='rss'):
+                    with tag('info2', name='info2'):
                         text(w_info2)
-                    with tag('url', name='web_site'):
+                    with tag('urlWeb', name='webSite'):
                         text(w_url)
-                    with tag('url', name='rss'):
+                    with tag('urlRss', name='urlRss'):
                         text(w_url_rss)
             result = indent(
                 doc.getvalue(),
