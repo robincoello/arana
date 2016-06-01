@@ -18,14 +18,14 @@ class DmozSpider(scrapy.Spider):
         print '---------------------------------------'
         doc, tag, text = Doc(
             defaults = {
-            'web': qqq,
+            'webrss': qqq,
             'url': 'You just won the lottery!'
         },
         ).tagtext()
         with tag('root'):
             with tag('doc'):
                 with tag('url', name='web'):
-                    text('web')
+                    text('webrss')
                 with tag('url', name='rss'):
                     text('qqq')
         result = indent(
