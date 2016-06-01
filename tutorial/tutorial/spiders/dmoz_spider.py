@@ -20,10 +20,10 @@ class DmozSpider(scrapy.Spider):
 
         with tag('root'):
             with tag('doc'):
-                with tag('field1', name='blah'):
-                    text('some value1')
-                with tag('field2', name='asdfasd'):
-                    text('some value2')
+                with tag('url', name='web'):
+                    text('web')
+                with tag('url', name='rss'):
+                    text('qqq')
         result = indent(
             doc.getvalue(),
             indentation = ' '*4,
@@ -33,7 +33,8 @@ class DmozSpider(scrapy.Spider):
         print '---------------------------------------'
         file = open(filename, 'rw+')
         file.seek(0, 2)
-        file.writelines(result)
+        file.writelines(result) # test to try make a xml
+        #file.writelines(qqq) # uncoment this to write a rss
         file.close()
         print '---------------------------------------'
         print '---------------------------------------'
