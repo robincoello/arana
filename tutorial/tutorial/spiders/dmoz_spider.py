@@ -9,7 +9,6 @@ class DmozSpider(scrapy.Spider):
     f.close()
  
     def parse(self, response):
-
 	#file to save
         filename = 'respuestas.html'
 	qqq = response.xpath("/html/head/link[@type='application/rss+xml']/@href").extract()        
@@ -17,7 +16,7 @@ class DmozSpider(scrapy.Spider):
         print '---------------------------------------'
         file = open(filename, 'rw+')
         file.seek(0, 2)
-        file.writelines(qqq) # uncoment this to write a rss
+        file.writelines(qqq)
         file.writelines('\n')
         file.close()
         print '---------------------------------------'
