@@ -3,6 +3,10 @@
 you need install 
 > pip install yattag
 
+tuto
+
+http://doc.scrapy.org/en/1.1/intro/tutorial.html#creating-a-project
+
 
 go to 
 
