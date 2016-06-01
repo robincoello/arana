@@ -10,26 +10,26 @@ class DmozSpider(scrapy.Spider):
  
 
     def parse(self, response):
-        urlsrss = []
+
 	#file to save
         filename = 'respuestas.html'
 	qqq = response.xpath("/html/head/link[@type='application/rss+xml']/@href").extract()        
-        urlsrss.append(qqq)
-        print '---------------------------------------'
-        print '--------antes de imprimir--------------'
-        print urlsrss # just for check 
         print '---------------------------------------'
         print '---------------------------------------'
+        file = open(filename, 'rw+')
+        file.seek(0, 2)
+        file.writelines(qqq)
+        file.close()
         print '---------------------------------------'
-        with open(filename, 'wb') as f:
-            f.writelines(qqq)
+        print '---------------------------------------'
 
-        print '----despues de imprimir ---------------'
-        print '---------------------------------------'
-        print "the url "
-        print urlsrss
-        print '---------------------------------------'
-        print '---------------------------------------'
-        print '---------------------------------------'
-        print '--------The last line------------------'
+
+
+
+
+
+
+
+
+
 
