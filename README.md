@@ -1,5 +1,9 @@
 #arana
 
+you need install 
+> pip install yattag
+
+
 go to 
 
 /arana/tutorial/tutorial/spiders
